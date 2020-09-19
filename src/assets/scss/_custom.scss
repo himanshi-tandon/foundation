@@ -1,0 +1,861 @@
+$main-heading-size: 60px;
+$dark-blue: #0c273e;
+$orange-color: #ee4056;
+$margin-bottom39: 39px;
+$grey-color: #f5f5f5;
+$font-family-museo: "Museo Slab 500";
+$font-family-overpass: "Overpass Regular";
+
+%font-size30 {
+    line-height: 40px;
+    font-size: 30px;
+}
+
+%font-size28 {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+%font-size20 {
+    font-size: 20px;
+    line-height: 30px;
+}
+%font-size18 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+%font-size36 {
+    font-size: 36px;
+    line-height: 46px;
+}
+%border-right-grey {
+    border-right: 2px solid #b8bdc4;
+}
+
+%extension-font-size36 {
+    color: $dark-blue;
+    @extend %font-size36;
+    font-family: "Museo Slab 700";
+}
+
+%extension-person-info {
+    background-position: 72% 18%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border: 10px solid $grey-color;
+    border-radius: 50%;
+    min-width: 250px; /* depends on size of photo & container */
+    height: 250px; /* just to reset to default if needed */
+    padding-top: 20%; /* must equal min-width to make a circle */
+    float: left; /* or position absolute */
+}
+
+%extension-div-circle-main {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+%extension-widget-heading {
+    @extend %font-size36;
+    color: $dark-blue;
+    font-family: "Covered By Your Grace Regular";
+}
+
+%extension-widget-innerheading {
+    @extend %font-size36;
+    color: $orange-color;
+    margin-bottom: $margin-bottom39;
+    font-family: $font-family-museo;
+}
+
+%extension-widget-innertext {
+    @extend %font-size18;
+    font-family: $font-family-overpass;
+    color: $dark-blue;
+}
+
+%stylish-person-header {
+    width: 100%;
+    height: 80vh;
+    background-color: #4dc0b6;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 3rem;
+}
+
+%stylish-person-headerbefore {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+}
+
+.widget.widget-logo {
+    .div-main img {
+        height: 69px;
+        @media screen and (max-width: 39.9375em) {
+            height: 40px;
+        }
+    }
+}
+.widget.widget-banner {
+    .variant-simple-with-background {
+        .img-container {
+            position: relative;
+        }
+        .caption-container {
+            position: absolute;
+            bottom: 30px;
+            left: 38px;
+            font-size: $main-heading-size;
+            color: $body-background;
+            opacity: 0.75;
+            @media screen and (max-width: 39.9375em) {
+                left: 25px;
+            }
+        }
+        .caption-content {
+            font-family: $font-family-museo;
+            line-height: 72px;
+            margin: 0;
+            @media screen and (max-width: 39.9375em) {
+                font-size: 30px;
+                line-height: 30px;
+            }     
+        }
+    }
+}
+
+.widget.widget-story {
+    .mobile-padding{
+        padding: 1rem !important;
+    }
+    @media screen and (max-width: 39.9375em) {
+        .mobile-story{
+        padding-left: 10px !important;
+        }
+    }
+    h1 {
+        font-size: $main-heading-size;
+        color: $dark-blue;
+        font-family: $font-family-museo;
+    }
+    span {
+        font-size: $main-heading-size;
+        color: $orange-color;
+        margin-bottom: $margin-bottom39;
+        font-family: $font-family-museo;
+    }
+    p {
+        @extend %font-size20;
+        color: $dark-blue;
+        line-height: 30px;
+        font-family: $font-family-museo;
+    }
+    .grey-div {
+        background-color: $grey-color;
+        @media screen and (max-width: 39.9375em) {
+            margin-left: 0px !important;
+        }
+    }
+    .grey-div p {
+        font-family: $font-family-museo;
+        color: $dark-blue;
+        @extend %font-size30;
+        @media screen and (max-width: 39.9375em) {
+            font-size:20px;
+        } 
+    }
+    a,
+    a:hover {
+        font-size: 30px;
+        color: $orange-color;
+        @media screen and (max-width: 39.9375em) {
+            font-size:20px;
+        } 
+    }
+}
+
+.widget.widget-lifeshift {
+    @media screen and (max-width: 39.9375em) {
+        padding-left: 10px !important;
+    }
+    h1 {
+        @extend %extension-widget-heading;
+    }
+
+    span {
+        @extend %extension-widget-innerheading;
+    }
+    p {
+        @extend %extension-widget-innertext;
+    }
+    .div-circle-main,
+    .div-circle-inner {
+        @extend %extension-div-circle-main;
+        @media screen and (max-width: 39.9375em) {
+            width: 62%;
+        }
+    }
+    .circle-frame {
+        background-image: url("../img/person-img.jpg");
+        @extend %extension-person-info;
+    }
+    .widget-quotes {
+        width: 81%;
+        text-align: left;
+        margin: 0 auto;
+    }
+    .widget-quotes div {
+        border-left: 3px solid $orange-color;
+        padding-left: 20px;
+    }
+    .widget-quotes div p {
+        font-family: $font-family-museo;
+        color: $orange-color;
+        @extend %font-size30;
+    }
+    .higlight-inner {
+        font-family: $font-family-overpass;
+        @extend %font-size18;
+        color: $dark-blue;
+    }
+    .circle-frame-inner {
+        background-image: url("../img/persontwo-img.jpg");
+        @extend %extension-person-info;
+    }
+}
+
+.widget.widget-workshift {
+    .div-workshift {
+        @media screen and (max-width: 39.9375em) {
+            padding-left:10px ;
+        }
+        h1 {
+            @extend %extension-widget-heading;
+            @media screen and (max-width: 39.9375em) {
+                margin-top: 0px !important;
+                margin-bottom: 1rem !important;
+            }
+        }
+        span {
+            @extend %extension-widget-innerheading;
+        }
+        p {
+            @extend %extension-widget-innertext;
+            @extend %border-right-grey;
+            padding-right: 66px;
+            @media screen and (max-width: 39.9375em) {
+                border: none;
+                padding-right: 5px;
+            }
+        }
+    }
+    .widget-rotating {
+        padding: 221px 81px 0 81px;
+        @media screen and (max-width: 39.9375em) {
+            padding: 0 0 0 10px;
+        }
+        h1 {
+            font-family: "Museo Slab 700";
+            @extend %font-size36;
+            color: $dark-blue;
+            @media screen and (max-width: 39.9375em) {
+               font-size: 30px;
+               line-height: 30px;
+            }
+        }
+        p {
+            font-size: 40px;
+            color: #ee4056;
+            font-family: "Covered By Your Grace Regular";
+            line-height: 40px;
+            border-bottom: 1px solid #b8bdc4;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.widget-feed-inner {
+    .item {
+        position: relative;
+        height: 19rem;
+        background-color: lightGrey;
+        overflow-y: hidden;
+        box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
+        
+        h3 {
+            margin: 0;
+            display: block;
+            background-color: turquoise;
+            padding: 1rem;
+        }
+        
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            
+            &:hover,
+            &:focus {
+                ~ .item__overlay {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+    
+    
+    
+    .item__body {
+        flex-grow: 1;
+        padding: 1rem;
+        
+        p {
+            margin: 0;
+        }
+    }
+    .item {
+        position: relative;
+
+        h3 {
+            margin: 0;
+            display: block;
+            color: #fff;
+            padding: 1rem;
+            background-color: transparent;
+        }
+
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            &:hover,
+            &:focus {
+                ~ .item__overlay {
+                    transform: translate3d(0, 0, 0);
+                }
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .item__overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        transition: transform 300ms;
+        color: #fff;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.4);
+        transform: translate3d(0, calc(100% - 3.5rem), 0);
+        padding: 0 20px;
+    }
+
+    .item__body {
+        flex-grow: 1;
+        padding: 1rem;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+.widget.widget-client-listen{
+    .div-listen{
+        border-right: 2px solid #b8bdc4;
+         padding:0 30px;
+         @media screen and (max-width: 39.9375em) {
+            margin-right: 10px !important;
+        } 
+    h1{
+        @extend %font-size20;
+        font-family:'Museo Slab 700';
+        color:$dark-blue;
+        @media screen and (max-width: 39.9375em) {
+            margin-top: 0px !important;
+        } 
+    }
+    p{
+        @extend %font-size36;
+        color: $orange-color;
+        font-family: 'Museo Slab 700';
+        @media screen and (max-width: 39.9375em) {
+            font-size: 20px;
+            line-height: 30px;
+        }  
+    }
+    label{
+        @extend %font-size20;
+        color:$dark-blue;
+        font-family: 'Museo Slab 500';
+    }
+}
+}
+.widget.widget-feed {
+    // background-color: #0E2E47;
+    @media screen and (max-width: 39.9375em) {
+        margin-top: 0px !important;
+    }
+    .relative {
+        position: relative;
+    }
+    .margin-top-6 {
+        margin-top: 6rem;
+    }
+    .div-person-header {
+        @extend %stylish-person-header;
+    }
+    .div-person-header:before {
+        @extend %stylish-person-headerbefore;
+    }
+    .div-blend span {
+        @extend %extension-font-size36;
+    }
+    .div-blend p {
+        @extend %extension-font-size36;
+        color: #fff;
+        @media screen and (max-width: 39.9375em) {
+            padding-left: 20px;
+        }
+    }
+}
+.widget.widget-join-team {
+    .div-person-header {
+        @extend %stylish-person-header;
+        background-color: $grey-color;
+        transform: rotate(180deg);
+        margin-top: -250px;
+        @media screen and (max-width: 39.9375em) {
+            margin-top: -209px;
+        }
+    }
+    .div-person-header:before {
+        @extend %stylish-person-headerbefore;
+    }
+    .div-blend {
+        transform: inherit;
+        padding-top: 50px;
+        @media screen and (max-width: 39.9375em) {
+           padding-top: 100px;
+        }
+    }
+    .div-blend p {
+        @extend %font-size20;
+        color: $dark-blue;
+        font-family: "Museo Slab 700";
+        @media screen and (max-width: 39.9375em) {
+            padding-left: 20px;
+            line-height: 20px;
+        }
+    }
+    .div-blend h1 {
+        @extend %font-size30;
+        color: $orange-color;
+        font-family: "Museo Slab 500";
+        @media screen and (max-width: 39.9375em) {
+            padding-left: 20px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    .div-join-team {
+        margin-top: 6rem;
+        @extend %border-right-grey;
+        padding-right: 30px;
+        @media screen and (max-width: 39.9375em) {
+            margin-bottom: 0px !important;
+        }
+    }
+    .div-join-inner {
+        padding-left: 30px;
+        margin-top: 6rem;
+        @media screen and (max-width: 39.9375em) {
+            margin-top: 0px !important;
+            padding-left: 20px;
+            margin-bottom: 0px !important;
+        }
+    }
+    .div-join-inner p {
+        @extend %font-size18;
+        font-family: $font-family-overpass;
+        color: $dark-blue;
+        margin-bottom: 2rem;
+        @media screen and (max-width: 39.9375em) {
+            padding-left: 0px;
+            margin-bottom: 17px;
+        }
+    }
+    .btn-opportuniities {
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        color: $orange-color;
+        border: 1px solid $orange-color;
+        padding-left: 10px;
+        background-color: #fff;
+        height: 52px;
+        line-height: 10px;
+    }
+    .btn-opportuniities i {
+        border-radius: 25px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid $orange-color;
+        position: relative;
+        top: -14px;
+        right: -17px;
+        font-size: 21px;
+    }
+    .fa-arrow-right:before {
+        position: relative;
+        top: 14px;
+    }
+}
+.widget.widget-person {
+    text-align: center;
+    margin: 0px !important;
+    .fa-about {
+        color: #4dc0b6;
+        margin-left: 5px;
+    }
+    .position-relative {
+        position: relative;
+        bottom: 259px;
+        @media screen and (max-width: 39.9375em) {
+            bottom: 189px;
+            padding: 0 15px;
+        }
+    }
+
+    .radius {
+        border-radius: 20px;
+    }
+    .overlay {
+        padding: 51px 51px 51px 20px;
+    }
+    .overlay h3 {
+        font-family: "Museo Slab 500";
+        @extend %font-size28;
+        color: #ffffff;
+        opacity: 0.75;
+        letter-spacing: 0.5px;
+        position: absolute;
+        top: 10px;
+        left: 71px;
+    }
+    .item__body button {
+        position: relative;
+        top: 252px;
+        color: #fff;
+        @extend %font-size18;
+        font-family: "Museo Slab 700";
+        left: 29px;
+        cursor: pointer;
+    }
+    .grid-width {
+        width: 31.33333%;
+        position: relative;
+        @media screen and (max-width: 39.9375em) {
+            width: 100%;
+        }
+    }
+    .grid-width p {
+        position: absolute;
+        font-size: 28px;
+        line-height: 38px;
+        font-family: "Museo Slab 700";
+        top: 274px;
+        left: 39px;
+        color: #fff;
+    }
+
+    .grid-width span {
+        position: absolute;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Museo Slab 700";
+        top: 43px;
+        left: 68px;
+        color: #fff;
+    }
+
+    .margin-right15 {
+        margin-right: 15px;
+    }
+}
+
+// for overlay
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.widget.widget-learn-more {
+    width: 100%;
+    background-color: #4dc0b6;
+    .div-chatting {
+        padding: 30px;
+        width: 51%;
+        margin: 0 auto;
+        @media screen and (max-width: 39.9375em) {
+            width: 100%;
+        }
+    }
+    .div-chatting img {
+        width: 90px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-chatting p {
+        @extend %extension-font-size36;
+        color: #fff;
+    }
+    .div-chatting span {
+        @extend %extension-font-size36;
+    }
+
+    .btn-getintouch {
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+        border: 1px solid #fff;
+        padding-left: 20px;
+        background-color: #4dc0b6;
+        height: 52px;
+        line-height: 10px;
+    }
+    .btn-getintouch i {
+        border-radius: 25px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid #fff;
+        position: relative;
+        top: -14px;
+        right: -17px;
+        font-size: 21px;
+    }
+    .fa-arrow-right:before {
+        position: relative;
+        top: 14px;
+    }
+}
+
+.widget.widget-footer {
+    background-color: #0c2840;
+    padding: 30px;
+    width: 100%;
+    .div-footer a,
+    .div-socialicons {
+        color: #fff;
+    }
+    i.fa.fa-user.div-socialicons.div-social-border{
+        border: none; 
+        color: #d7d7d7;
+        font-size: 24px;
+    }
+    .fa {
+        border: 1px solid #fff;
+        border-radius: 50px;
+        padding: 5px;
+    }
+    .fa:hover {
+        background-color: #4dc0b6;
+    }
+    .div-socialicons:hover {
+        color: #fff !important;
+    }
+    .get-touch {
+        border-right: 2px solid #fff;
+        padding-right: 10px;
+        @media screen and (max-width: 39.9375em) {
+            padding-right: 3px;
+        }
+    }
+    .div-border {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+    }
+    .div-employee,
+    .div-privacy {
+        padding: 30px 0 0 10px;
+        @media screen and (max-width: 39.9375em) {
+            padding: 20px;
+            width: 100%;
+        }
+    }
+    .div-employee p {
+        color: #fff;
+        font-size: 16px;
+        font-family: "Museo Slab 700";
+        line-height: 19px;
+    }
+    .div-employee p:hover,
+    .div-privacy a:hover,
+    .div-footer a:hover {
+        color: #4dc0b6;
+    }
+    .div-privacy a {
+        font-size: 10px;
+        color: #fff;
+        font-family: "Overpass Bold";
+        line-height: 26px;
+    }
+}
+
+.reveal {
+    border-radius: 24px !important;
+    padding: 33px !important;
+    overflow-y: visible !important;
+}
+div#story-modal {
+    top: 85px !important;
+}
+.reveal h1 {
+    color: #ee4056;
+    font-size: 28px;
+    line-height: 38px;
+    font-family: "Museo Slab 700";
+    padding-bottom: 25px;
+}
+.reveal p {
+    border-top: 2px solid #b8bdc4;
+    padding-top: 25px;
+    font-size: 16px;
+    font-weight: $font-family-overpass;
+    line-height: 26px;
+}
+button.close-button {
+    top: -59px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    right: 0px;
+}
+.close-button {
+    color: #ee4056 !important;
+}
+
+div#contact-person-modal {
+    top: 90px !important;
+    @media screen and (max-width: 39.9375em) {
+        top: 156px !important;
+        height: auto !important;
+    }
+}
+.div-person-info {
+    .border-orange {
+        border-right: 2px solid $orange-color;
+    }
+    .close-button {
+        color: $orange-color !important;
+        line-height: 0px !important;
+    }
+    .div-person-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+   img {
+        width: 60%;
+        height: 50%;
+        border-radius: 60% !important;
+        @media screen and (max-width: 39.9375em) {
+            width: 60%;
+            height: auto;
+            border-radius: 60% !important;
+        }
+    }
+    h1 {
+        color: #ee4056;
+        font-size: 28px;
+        font-family: "Museo Slab 700";
+        padding-bottom: 0px;
+    }
+    p {
+        font-size: 16px;
+        font-family: $font-family-overpass;
+        line-height: 28px;
+        color: $dark-blue;
+        border-top: none;
+        border-bottom: 2px solid #b8bdc4;
+        padding: 20px 0;
+        padding-top: 0px;
+    }
+
+    label {
+        font-size: 16px;
+        font-family: $font-family-overpass;
+        line-height: 26px;
+        color: $dark-blue;
+        padding: 10px;
+    }
+
+    i {
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid grey;
+        padding: 10px;
+        color: #000;
+    }
+
+    h2 {
+        @extend %font-size18;
+        font-family: $font-family-overpass;
+        color: $orange-color;
+        padding-left: 10px;
+    }
+}
+
