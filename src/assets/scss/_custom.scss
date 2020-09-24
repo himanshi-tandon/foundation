@@ -63,7 +63,7 @@ $font-family-overpass: "Overpass";
 }
 
 %extension-widget-heading {
-    @extend %font-size36;
+    @extend %font-size60;
     color: $dark-blue;
     font-family: "Covered By Your Grace";
 }
@@ -95,7 +95,7 @@ $font-family-overpass: "Overpass";
 %stylish-person-headerbefore {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 250px;
@@ -116,21 +116,27 @@ $font-family-overpass: "Overpass";
         .img-container {
             position: relative;
         }
+        .img-container img{
+            clip-path: polygon(0 0, 100% 0%, calc(90% - 32px) 100%, 0% 100%)
+        }
         .caption-container {
             position: absolute;
-            bottom: 30px;
-            left: 93px;
+            bottom: 56px;
+            width: 100%;
             font-size: $main-heading-size;
             color: $body-background;
             opacity: 0.75;
             @media screen and (max-width: 39.9375em) {
                 left: 25px;
+                bottom: 10px;
             }
         }
         .caption-content {
             font-family: $font-family-museo;
             line-height: 72px;
             margin: 0;
+            width: 64%;
+            font-weight: 500;
             @media screen and (max-width: 39.9375em) {
                 font-size: 30px;
                 line-height: 30px;
@@ -142,6 +148,9 @@ $font-family-overpass: "Overpass";
 .widget.widget-story {
     .mobile-padding{
         padding: 7rem !important;
+        @media screen and (max-width: 39.9375em) {
+            padding: 1rem !important;
+        }
     }
     @media screen and (max-width: 39.9375em) {
         .mobile-story{
@@ -152,6 +161,7 @@ $font-family-overpass: "Overpass";
         font-size: $main-heading-size;
         color: $dark-blue;
         font-family: $font-family-museo;
+        font-weight: 500;
     }
     span {
         font-size: $main-heading-size;
@@ -265,13 +275,14 @@ $font-family-overpass: "Overpass";
         }
     }
     .widget-rotating {
-        padding: 221px 81px 0 81px;
+        padding: 212px 81px 0 81px;
         @media screen and (max-width: 39.9375em) {
             padding: 0 0 0 10px;
         }
         h1 {
             font-family: "museo-slab";
             @extend %font-size36;
+            font-weight: 700;
             color: $dark-blue;
             @media screen and (max-width: 39.9375em) {
                font-size: 30px;
@@ -349,6 +360,9 @@ $font-family-overpass: "Overpass";
             width: 100%;
             height: 100%;
             z-index: 1;
+            font-size: 28px;
+            line-height: 38px;
+            font-family: 'museo-slab';
 
             &:hover,
             &:focus {
@@ -379,9 +393,24 @@ $font-family-overpass: "Overpass";
         font-size: 18px;
         background-color: rgba(14, 46, 71, 0.7);
         transform: translate3d(0, calc(100% - 0.1rem), 0);
-        padding: 0 20px;
-    }
+        padding: 6rem 20px;
+        @media screen and (max-width: 39.9375em) {
+            padding: 11rem 20px;
+        }
 
+        h3{
+           font-family: 'museo-slab';
+           font-size:28px;
+           line-height: 38px;
+            color: #ffffff;
+              opacity: 0.75;
+              letter-spacing: 0.5px;
+        }
+
+    }
+.border-top-grey{
+    border-top:2px solid #b8bdc4;padding-bottom: 30px;
+}
     .item__body {
         flex-grow: 1;
         padding: 1rem;
@@ -424,6 +453,44 @@ $font-family-overpass: "Overpass";
 }
 .widget.widget-feed {
     // background-color: #0E2E47;
+    .div-feedinner{
+        padding: 2.4rem;
+
+        p{
+            color: #fff;
+            @extend %font-size20;
+            font-family:'$font-family-museo';
+            font-weight: 700;   
+             margin-bottom: 5px;
+        }
+        h2{
+           @extend %font-size36;
+            color:#4DC0B6;
+            font-family:'$font-family-museo';
+             font-weight: 700;
+        }
+        label{
+            @extend %font-size20;
+            font-family:'$font-family-museo';
+            color:#fff;line-height: 36px;
+            margin-top: 30px;
+            margin-bottom: 0px !important;
+        }
+
+    }
+    .mirror{
+        @extend %font-size28;
+        font-family:'$font-family-museo';   
+         position: absolute;
+        bottom: 30px;
+        left: 166px;
+        color: #ffffff;
+        opacity: 0.75;
+        letter-spacing: 0.5px;
+        @media screen and (max-width: 39.9375em) {
+            left:91px
+        }
+    }
     @media screen and (max-width: 39.9375em) {
         margin-top: 0px !important;
     }
@@ -492,13 +559,14 @@ $font-family-overpass: "Overpass";
     .div-join-team {
         margin-top: 6rem;
         @extend %border-right-grey;
-        padding-right: 30px;
+        padding-right: 4rem;
         @media screen and (max-width: 39.9375em) {
             margin-bottom: 0px !important;
+            margin-top: 20px !important;
         }
     }
     .div-join-inner {
-        padding-left: 30px;
+        padding-left: 5rem;
         margin-top: 6rem;
         @media screen and (max-width: 39.9375em) {
             margin-top: 0px !important;
@@ -522,7 +590,7 @@ $font-family-overpass: "Overpass";
         font-size: 16px;
         color: $orange-color;
         border: 1px solid $orange-color;
-        padding-left: 10px;
+        padding-left: 2rem;
         background-color: #fff;
         height: 52px;
         line-height: 10px;
@@ -561,26 +629,29 @@ $font-family-overpass: "Overpass";
     .radius {
         border-radius: 20px;
     }
-    .overlay {
-        padding: 51px 51px 51px 20px;
-    }
+    // .overlay {
+    //     padding: 51px 51px 51px 20px;
+    // }
     .overlay h3 {
         font-family: "museo-slab";
         @extend %font-size28;
         color: #ffffff;
         opacity: 0.75;
         letter-spacing: 0.5px;
-        position: absolute;
-        top: 10px;
-        left: 71px;
+        // position: absolute;
+        // top: 10px;
+        // left: 71px;
+        padding: 133px 0px;
+        position: relative;
+        left: -64px;
     }
     .item__body button {
         position: relative;
-        top: 252px;
+         top: 44px;
         color: #fff;
         @extend %font-size18;
         font-family: "museo-slab";
-        left: 29px;
+        left: -13px;
         cursor: pointer;
     }
     .grid-width {
@@ -605,8 +676,8 @@ $font-family-overpass: "Overpass";
         font-size: 16px;
         line-height: 24px;
         font-family: "museo-slab";
-        top: 43px;
-        left: 68px;
+        top: 183px;
+        left: 26px;
         color: #fff;
     }
 
@@ -649,15 +720,15 @@ $font-family-overpass: "Overpass";
     background-color: #4dc0b6;
     .div-chatting {
         padding: 30px;
-        width: 51%;
-        margin: 0 auto;
+        text-align: center;
         @media screen and (max-width: 39.9375em) {
             width: 100%;
         }
     }
     .div-chatting img {
         width: 90px;
-        margin: 0 auto;
+        display: inline-block !important;
+        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -871,8 +942,9 @@ div#contact-person-modal {
 }
 
 .widget.widget-resources{
-    background-image: linear-gradient(-90deg,#fff, #4DC0B6);
+    background-image: linear-gradient(-90deg, #4DC0B6,#4DA6BD);
     padding: 6rem;
+    margin-top: 1rem;
     @media screen and (max-width: 39.9375em) {
         padding: 20px;
     }
@@ -898,13 +970,18 @@ div#contact-person-modal {
       margin-right: 15px;
 
   }
+  ul.div-filters{
+      margin:0px !important
+  }
   @media screen and (max-width: 39.9375em) {
     .div-filters li {
         margin-bottom: 10px;
     }
 }
-  .div-filters a:hover, .div-filters a:visited{
-    background-color: #fff;
+.active, .div-filters li a:hover{
+    background-color:#fff;
+
+  
   }
   span{
       color:$dark-blue;
@@ -919,6 +996,9 @@ div#contact-person-modal {
     width: 100%;
     background-color: #fff;
     padding: 6rem;
+    @media screen and (max-width: 39.9375em) {
+        padding: 2rem;
+    }
 
     p{
         @extend %font-size36;
@@ -948,8 +1028,19 @@ div#contact-person-modal {
     height: 52px;
     line-height: 10px;
 }
-i{
-    padding-left: 10px;
+.btn-getintouch i {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #4dc0b6 !important;
+    position: relative;
+    top: -14px;
+    right: -17px;
+    font-size: 21px;
+}
+.fa-arrow-right:before {
+    position: relative;
+    top: 14px;
 }
 img{
     height: 60px !important;
@@ -973,6 +1064,7 @@ img{
         height: 52px;
         line-height: 10px;
     }
+  
     i{
         padding-left: 10px;
     }
@@ -1007,3 +1099,55 @@ img{
 }
 
 
+//For cloud div
+
+
+/* fonts */
+
+div.jqcloud {
+    font-size: 10px;
+    line-height: normal;
+}
+
+div.jqcloud a {
+    font-size: inherit;
+    text-decoration: none;
+}
+
+div.jqcloud span.w10,div.jqcloud span.w9,div.jqcloud span.w8 ,div.jqcloud span.w7,div.jqcloud span.w6,div.jqcloud span.w5,div.jqcloud span.w4,div.jqcloud span.w3,div.jqcloud span.w2,div.jqcloud span.w1
+{font-size: 37px; font-family: 'Covered By Your Grace'; line-height: 38px;
+    @media screen and (max-width: 39.9375em) {
+        font-size: 20px !important ;
+        line-height: 29px !important;
+    } }
+
+
+/* colors */
+
+div.jqcloud { color: #2BA0FD; }
+div.jqcloud span.w10 { color: #0C273E; }
+div.jqcloud span.w9 { color: #EE4056; }
+div.jqcloud span.w8 { color: #A6ACB4; }
+div.jqcloud span.w7 { color: #298C2D; }
+div.jqcloud span.w6 { color:  #0073D0; }
+div.jqcloud span.w5 { color:  #0C273E; }
+div.jqcloud span.w4 { color: #441794; }
+div.jqcloud span.w3 { color:#A6ACB4; }
+div.jqcloud span.w2 { color: #EE4056; }
+div.jqcloud span.w1 { color: #D12013; }
+// div.jqcloud span:hover { color: #0099B2; }
+
+
+/* layout */
+
+div.jqcloud {
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+div.jqcloud span {
+    padding: 0;
+    border: none !important;
+    transform: rotateX(45deg);
+}

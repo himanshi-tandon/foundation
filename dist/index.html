@@ -1,696 +1,678 @@
 
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Overpass&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/kqj4bee.css">
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Overpass&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kqj4bee.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>    
+  <script src="JS/jquery.cycle.all.js"></script>
+</head>
+
 <body>
 
-<div class="reveal" id="story-modal" data-reveal>
-  <h1>Equity & Inclusion</h1>
-  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-    ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-    adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-    voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem.</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<div class="reveal large div-person-info" id="contact-person-modal" data-reveal>
-  <div class="grid-x">
-    <div class="cell small-12 medium-4 large-4 div-person-inner">
-      <img src="./assets/img/persontwo-img.jpg" alt="persono"
-        data-interchange="[./assets/img/persontwo-img.jpg, small], [./assets/img/persontwo-img.jpg, medium], [./assets/img/persontwo-img.jpg, large]">
-    </div>
-
-    <div class="small-12 medium-8 large-8">
-      <h1>Cori Davis</h1>
-      <p>Improvement Advisor</p>
-      <div class="grid-x">
-        <div class="cell small-12 medium-6 large-6 border-orange">
-          <label class="margin-bottom-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</label>
-          <br />
-          <a>
-            <i class="fa fa-envelope"></i>
-          </a>
-          <a>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-        </div>
-        <div class="cell small-12 medium-6 large-6">
-          <h2> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.”</h2>
-        </div>
-      </div>
-    </div>
+  <div class="reveal" id="story-modal" data-reveal>
+    <h1>Equity & Inclusion</h1>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+      enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+      ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+      voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
-
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
-
-<div class="grid-x widget widget-logo  margin-top-1">
-  <div class=" cell small-12 medium-11 large-11  div-main medium-centered columns">
-    <img src="./assets/img/logo.PNG" alt="logo"
-      data-interchange="[./assets/img/logo.PNG, small], [./assets/img/logo.PNG, medium], [./assets/img/logo.PNG, large]">
-    <a class="float-right">
-      <img src="./assets/img/menu-icon.PNG" alt="logo"
-        data-interchange="[./assets/img/menu-icon.PNG, small], [./assets/img/menu-icon.PNG, medium], [./assets/img/menu-icon.PNG, large]">
-    </a>
-    <a class="float-right margin-right-1">
-      <img src="../assets/img/chat-icon.PNG" alt="logo"
-        data-interchange="[./assets/img/chat-icon.PNG, small], [./assets/img/chat-icon.PNG, medium], [./assets/img/chat-icon.PNG, large]">
-    </a>
-  </div>
-</div>
-
-<div class="widget widget-banner">
-  <div class="variant-simple-with-background layout-default">
-    <div class="img-container">
-      <img src="https://picsum.photos/1400/400" width="100%" class="margin-top-1">
-      <div class="grid-x caption-container">
-        <div class="cell  medium-2 large-2 start"></div>
-        <div class="cell small-12 medium-10 large-10 start">
-          <p class="caption-content">
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-
-
-
-
-
-
-<div class="grid-x  medium-margin-collapse grid-container full widget widget-story margin-0">
-  <div class="cell  medium-2 large-2  start">
-  </div>
-
-  <div class="cell medium-10 large-10 small-12 margin-top-3">
-    <div class="grid-x  medium-margin-collapse">
-      <div class="cell small-12 medium-4 large-4 mobile-story">
-        <h1 class=margin-bottom-2>Our<span class="margin-left-1">story</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-      </div>
- <div class="cell medium-1 large-1"></div>
-      <div class="cell small-12 medium-7 large-7 grey-div">
-        <div class="padding-3 mobile-padding">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.<a class="text-underline" data-open="story-modal">Equity and inclusion</a> ut enim ad
-            minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="grid-x medium-margin-collapse grid-container full widget widget-lifeshift margin-0">
-  <div class="cell medium-2 large-2  start">
-  </div>
-
-  <div class="cell medium-10 large-10 small-12 margin-top-3">
-    <div class="grid-x  medium-margin-collapse">
-      <div class="cell small-12  medium-6 large-6">
-        <h1 class=margin-bottom-2>Life<span class="margin-left-1">at Shift.</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-        <div class="widget-quotes margin-top-3 margin-bottom-3">
-          <div>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-          </div>
-        </div>
-        <div>
-          <p class="higlight-inner">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-          </p>
-        </div>
-
-
-      </div>
-
-      <div class="cell small-12 large-6 medium-6">
-        <div class="div-circle-main">
-          <div class="circle-frame">
-          </div>
-        </div>
-        <div>
-          <div class="circle-frame-inner">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-<div class="grid-x medium-margin-collapse grid-container full widget widget-workshift margin-0">
-  <div class="cell  medium-2 large-2 start">
-  </div>
-
-  <div class="cell small-12 medium-10 large-10 margin-top-3">
-    <div class="grid-x  medium-margin-collapse">
-      <div class="cell small-12 medium-5 large-5 div-workshift">
-        <h1 class="margin-bottom-3 margin-top-3">Work<span class="margin-left-1">at Shift.</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
-
-      </div>
-
-      <div class="cell small-12 medium-7 large-7">
-        <div class="widget-rotating">
-          <h1 class="margin-bottom-2">Collectively our team has</h1>
-          <p>volunteered 200 hours</p>
-        </div>
-
-        <div>
-          <div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-<div class="grid-x medium-margin-collapse grid-container full widget widget-feed  margin-top-3"
-  style="background-color: #0E2E47;">
-  <div class="cell medium-1 large-1 start variant-simple-with-background layout-default">
-
-  </div>
-  <div class="cell small-12 medium-11 large-11">
-    <div class="grid-x  medium-margin-collapse">
-  
-      <div class="cell small-12 medium-12 large-7" style="padding: 7rem;">
-        <p style="font-size: 20px;color: #fff;line-height: 30px; font-family: 'Museo Slab 700' ">Our Principles</p>
-        <h2 style="font-size:36;color:#4DC0B6;font-family: 'Museo Slab 700';line-height: 46px;">Lorem ipsum dolor sit
-          amet consectetur adipiscing elit, sed do.</h2>
-        <p style="font-size: 20px;color:#fff;font-family: 'Museo Slab 500';line-height: 36px;margin-top: 30px;">Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua.</p>
-      </div>
-      <div class="cell  small-12 medium-12 large-5 text-right">
-
-        <div style="position: relative;">
-          <img src="https://picsum.photos/506/506">
-          <p style="font-family: 'Museo Slab 500';font-size:28px;line-height: 38px;    position: absolute;
-        bottom: 30px;
-        left: 166px;
-        color: #ffffff;
-        opacity: 0.75;
-        letter-spacing: 0.5px;">Mirror & Be Mirror</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div class="grid-x medium-margin-collapse grid-container full widget widget-feed-inner"
-  style="background-color: #0E2E47;">
-  <div class="cell small-12">
-    <div class="grid-x  medium-margin-collapse">
-      <div class="cell small-12 large-4 medium-4">
-
-        <div class="grid">
-          <div class="item">
-            <a href="#0" aria-labelledby="person1"></a>
-            <img src="https://picsum.photos/425/425">
-            <div class="item__overlay">
-              <h3 id="person1" aria-hidden="true" style="font-family: 'Museo Slab 500';font-size:28px;line-height: 38px;
-             
-              color: #ffffff;
-              opacity: 0.75;
-              letter-spacing: 0.5px;">Where is the Joy?</h3>
-              <div class="item__body">
-                <p style="border-top:2px solid #b8bdc4;padding-bottom: 30px;"></p>
-                <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
-                  the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
-                  new skills, and recognize our past successes.</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-      <div class="cell small-12 large-4 medium-4">
-
-        <div class="grid">
-          <div class="item">
-            <a href="#0" aria-labelledby="person2"></a>
-            <img src="https://picsum.photos/425/425">
-            <div class="item__overlay">
-              <h3 id="person2" aria-hidden="true" style="font-family: 'Museo Slab 500';font-size:28px;line-height: 38px;
-             
-              color: #ffffff;
-              opacity: 0.75;
-              letter-spacing: 0.5px;">Where is the Joy?</h3>
-              <div class="item__body">
-                <p style="border-top:2px solid #b8bdc4;padding-bottom: 30px;"></p>
-                <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
-                  the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
-                  new skills, and recognize our past successes.</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-      <div class="cell small-12 large-4 medium-4">
-
-        <div class="grid">
-          <div class="item">
-            <a href="#0" aria-labelledby="person2"></a>
-            <img src="https://picsum.photos/425/425">
-            <div class="item__overlay">
-              <h3 id="person2" aria-hidden="true" style="font-family: 'Museo Slab 500';font-size:28px;line-height: 38px;
-             
-              color: #ffffff;
-              opacity: 0.75;
-              letter-spacing: 0.5px;">Where is the Joy?</h3>
-              <div class="item__body">
-                <p style="border-top:2px solid #b8bdc4;padding-bottom: 30px;"></p>
-                <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
-                  the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
-                  new skills, and recognize our past successes.</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-    </div>
-
-
-    <div class="grid-x  medium-margin-collapse">
-      <div class="cell small-12 large-4 medium-4">
-
-        <div class="grid">
-          <div class="item">
-            <a href="#0" aria-labelledby="person3"></a>
-            <img src="https://picsum.photos/425/425">
-            <div class="item__overlay">
-              <h3 id="person3" aria-hidden="true" style="font-family: 'Museo Slab 500';font-size:28px;line-height: 38px;
-             
-              color: #ffffff;
-              opacity: 0.75;
-              letter-spacing: 0.5px;">Where is the Joy?</h3>
-              <div class="item__body">
-                <p style="border-top:2px solid #b8bdc4;padding-bottom: 30px;"></p>
-                <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
-                  the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
-                  new skills, and recognize our past successes.</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-      <div class="cell small-12 large-4 medium-4">
-
-        <div class="grid">
-          <div class="item">
-            <a href="#0" aria-labelledby="person3"></a>
-            <img src="https://picsum.photos/425/425">
-            <div class="item__overlay">
-              <h3 id="person3" aria-hidden="true" style="font-family: 'Museo Slab 500';font-size:28px;line-height: 38px;
-             
-              color: #ffffff;
-              opacity: 0.75;
-              letter-spacing: 0.5px;">Where is the Joy?</h3>
-              <div class="item__body">
-                <p style="border-top:2px solid #b8bdc4;padding-bottom: 30px;"></p>
-                <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
-                  the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
-                  new skills, and recognize our past successes.</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-      <div class="cell small-12 large-4 medium-4">
- <div class="grid">
-          <div class="item">
-            <a href="#0" aria-labelledby="person3"></a>
-            <img src="https://picsum.photos/425/425">
-            <div class="item__overlay">
-              <h3 id="person3" aria-hidden="true" style="font-family: 'Museo Slab 500';font-size:28px;line-height: 38px;
-             
-              color: #ffffff;
-              opacity: 0.75;
-              letter-spacing: 0.5px;">Where is the Joy?</h3>
-              <div class="item__body">
-                <p style="border-top:2px solid #b8bdc4;padding-bottom: 30px;"></p>
-                <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
-                  the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
-                  new skills, and recognize our past successes.</p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
-
-<div class="grid-x medium-margin-collapse grid-container full widget widget-client-listen margin-0">
-  <div class="cell  medium-2 large-2 start">
-  </div>
-
-  <div class="cell small-12 medium-10 large-10 margin-top-3">
-    <div class="grid-x  medium-margin-collapse">
-      <div class="cell small-12 medium-5 large-5 div-listen">
-        <h1 class=" margin-top-3">We Listen to Our
-          Clients</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do.
-        </p>
-
-        <label class="margin-top-2">Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-      </div>
-
-      <div class="cell small-12 large-7 medium-7">
-        <div class="widget-text-cloud" style="padding: 0 30px;">
-          <img src="./assets/img/cloud-img.jpg" alt="logo"
-            data-interchange="[./assets/img/cloud-img.jpg, small], [./assets/img/cloud-img.jpg, medium], [./assets/img/cloud-img.jpg, large]">
-
-        </div>
-
-        <div>
-          <div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="grid-x medium-margin-collapse grid-container full widget widget-feed margin-0 relative">
-  <div class="cell small-12 relative">
-    <div class="div-person-header">
-      <div class="div-blend">
-        <div class="grid-x">
-          <!-- <div class="cell  medium-1 large-1 start">
-
-          </div> -->
-          <div class="cell small-12 medium-12 large-12">
-            <div class="grid-x">
-           
-              <div class="cell small-12 medium-9 large-9 margin-bottom-3 margin-top-6">
-                <p style="    width: 64%;
-                margin: 0 auto;">Our unique blend of leadership, skills, and personalities <span>make up our team.</span></p>
-              </div>
-            <div class="cell  medium-3 large-3 end">
-
-          </div>
-            </div>
-
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-  </div>
-</div>
-<div class="grid-x row-align-center margin-top-3 widget widget-person">
-  <div class="cell  medium-2 large-2  start">
-  </div>
-  <div class="cell small-12 medium-8 large-8 container">
-    <div class="grid-x  position-relative">
-      <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width margin-right15">
-        <div class="grid">
-          <div class="item">
-            <label href="#0" aria-labelledby="person1"></label>
-            <img src="https://picsum.photos/360/480" class="radius image">
-
-            <div class="overlay radius">
-              <h3 id="person1" aria-hidden="true"> Cori Davis
-              </h3>
-              <span>Improvement Advisor</span>
-              <div class="item__body">
-
-                <button data-open="contact-person-modal" title="Learn more about Cori">Learn more about Cori <i
-                    class="fa fa-long-arrow-right fa-about"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cell small-12 medium-4 large-4   margin-bottom-1 grid-width margin-right15">
-        <img src="https://picsum.photos/360/480" class="radius">
-      </div>
-      <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width">
-        <img src="https://picsum.photos/360/480" class="radius">
-
-      </div>
-    </div>
-
-
-    <div class="grid-x position-relative">
-      <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width margin-right15">
-        <img src="https://picsum.photos/360/480" class="radius">
-      </div>
-      <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width margin-right15">
-        <img src="https://picsum.photos/360/480" class="radius">
-      </div>
-      <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width">
-        <img src="https://picsum.photos/360/480" class="radius">
-      </div>
-    </div>
-
-
-    <div class="grid-x  position-relative">
-      <div class="cell small-12 medium-4 large-4   margin-bottom-1 grid-width margin-right15">
-        <img src="https://picsum.photos/360/480" class="radius">
-      </div>
-      <div class="cell small-12 medium-4 large-4   margin-bottom-1 grid-width margin-right15">
-        <img src="https://picsum.photos/360/480" class="radius">
-      </div>
-      <div class="cell small-12 medium-4 large-4 4 margin-bottom-1 grid-width">
-
-      </div>
-    </div>
-
-  </div>
-
-  <div class="cell medium-2 large-2 end">
-
-  </div>
-</div>
-
-
-
-<div class="grid-x medium-margin-collapse grid-container full widget widget-join-team margin-0">
-  <div class="cell small-12">
-    <div class="div-person-header">
-      <div class="div-blend">
-        <div class="grid-x">
-          <div class="cell  medium-2 large-2 start">
-
-          </div>
-          <div class="cell small-12 medium-10 large-10">
-            <div class="grid-x">
-              <div class="cell small-12 medium-6 large-6 margin-bottom-3 div-join-team">
-                <p>Join the Teams</p>
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h1>
-              </div>
-
-              <div class="cell small-12 medium-6 large-6 margin-bottom-3 div-join-inner">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua.</p>
-
-                <a href="#" class="button radius btn-opportuniities" title="View Current Opportuniities">View Current Opportuniities<i
-                    class="fa fa-arrow-right"></i></a>
-
-              </div>
-
-            </div>
-
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-</div>
-
-<div class="widget widget-learn-more grid-x">
-  <div class="cell small-12">
+  <div class="reveal large div-person-info" id="contact-person-modal" data-reveal>
     <div class="grid-x">
-      <div class="cell small-12 medium-centered small-centered ">
-        <div class="div-chatting">
-          <img class="margin-bottom-1" src="./assets/img/chatting-icon.JPG" alt="logo"
-            data-interchange="[./assets/img/chatting-icon.JPG, small], [./assets/img/chatting-icon.JPG, medium], [./assets/img/chatting-icon.JPG, large]">
-          <p class="margin-bottom-1">We’re ready to learn more,<span> are you?</span></p>
-          <div class="div-chatting">
-            <a href="#" class="button radius btn-getintouch" title="et in touch">Get in touch<i class="fa fa-arrow-right"></i></a>
+      <div class="cell small-12 medium-4 large-4 div-person-inner">
+        <img src="./assets/img/persontwo-img.jpg" alt="persono"
+          data-interchange="[./assets/img/persontwo-img.jpg, small], [./assets/img/persontwo-img.jpg, medium], [./assets/img/persontwo-img.jpg, large]">
+      </div>
+  
+      <div class="small-12 medium-8 large-8">
+        <h1>Cori Davis</h1>
+        <p>Improvement Advisor</p>
+        <div class="grid-x">
+          <div class="cell small-12 medium-6 large-6 border-orange">
+            <label class="margin-bottom-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.</label>
+            <br />
+            <a>
+              <i class="fa fa-envelope"></i>
+            </a>
+            <a>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
           </div>
-
+          <div class="cell small-12 medium-6 large-6">
+            <h2> “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.”</h2>
+          </div>
         </div>
-
+      </div>
+    </div>
+  
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  
+  
+  <div class="grid-x widget widget-logo  margin-top-1">
+    <div class=" cell small-12 medium-11 large-11  div-main medium-centered columns">
+      <img src="./assets/img/logo.PNG" alt="logo"
+        data-interchange="[./assets/img/logo.PNG, small], [./assets/img/logo.PNG, medium], [./assets/img/logo.PNG, large]">
+      <a class="float-right">
+        <img src="./assets/img/menu-icon.PNG" alt="logo"
+          data-interchange="[./assets/img/menu-icon.PNG, small], [./assets/img/menu-icon.PNG, medium], [./assets/img/menu-icon.PNG, large]">
+      </a>
+      <a class="float-right margin-right-1">
+        <img src="../assets/img/chat-icon.PNG" alt="logo"
+          data-interchange="[./assets/img/chat-icon.PNG, small], [./assets/img/chat-icon.PNG, medium], [./assets/img/chat-icon.PNG, large]">
+      </a>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="widget widget-banner">
+    <div class="variant-simple-with-background layout-default">
+      <div class="img-container">
+        <img src="https://picsum.photos/1400/400" width="100%";
+        " class="margin-top-1">
+        <div class="caption-container grid-x">
+          <div class="cell  medium-2 large-2 start"></div>
+          <div class="cell small-12 medium-10 large-10">
+            <p class="caption-content">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  
+  <div class="grid-x   grid-container full widget widget-story margin-0">
+    <div class="cell  medium-2 large-2  start">
+    </div>
+  
+    <div class="cell medium-10 large-10 small-12 margin-top-3">
+      <div class="grid-x  medium-margin-collapse">
+        <div class="cell small-12 medium-4 large-4 mobile-story">
+          <h1 class=margin-bottom-2>Our<span class="margin-left-1">story</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
+          </p>
+  
+        </div>
+   <div class="cell medium-1 large-1"></div>
+        <div class="cell small-12 medium-7 large-7 grey-div">
+          <div class="padding-3 mobile-padding">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.<a class="text-underline" data-open="story-modal">Equity and inclusion</a> ut enim ad
+              minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <div class="grid-x medium-margin-collapse grid-container full widget widget-lifeshift margin-0">
+    <div class="cell medium-2 large-2  start">
+    </div>
+  
+    <div class="cell medium-10 large-10 small-12 margin-top-3">
+      <div class="grid-x  medium-margin-collapse">
+        <div class="cell small-12  medium-6 large-6">
+          <h1 class=margin-bottom-2>Life<span class="margin-left-1">at Shift.</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
+          </p>
+  
+          <div class="widget-quotes margin-top-3 margin-bottom-3">
+            <div>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+          </div>
+          <div>
+            <p class="higlight-inner">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            </p>
+          </div>
+  
+  
+        </div>
+  
+        <div class="cell small-12 large-6 medium-6">
+          <div class="div-circle-main">
+            <div class="circle-frame">
+            </div>
+          </div>
+          <div>
+            <div class="circle-frame-inner">
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+  <div class="grid-x medium-margin-collapse grid-container full widget widget-workshift margin-0">
+    <div class="cell  medium-2 large-2 start">
+    </div>
+  
+    <div class="cell small-12 medium-10 large-10 margin-top-3">
+      <div class="grid-x  medium-margin-collapse">
+        <div class="cell small-12 medium-5 large-5 div-workshift">
+          <h1 class="margin-bottom-3 margin-top-3">Work<span class="margin-left-1">at Shift.</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
+          </p>
+  
+        </div>
+  
+        <div class="cell small-12 medium-7 large-7">
+          <div class="widget-rotating">
+            <h1 class="margin-bottom-2">Collectively our team has</h1>
+            <p>volunteered 200 hours</p>
+          </div>
+  
+          <div>
+            <div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+  <div class="grid-x medium-margin-collapse grid-container full widget widget-feed  margin-top-3"
+    style="background-color: #0E2E47;">
+    <div class="cell medium-1 large-1 start variant-simple-with-background layout-default">
+  
+    </div>
+    <div class="cell small-12 medium-11 large-11">
+      <div class="grid-x  medium-margin-collapse">
+    
+        <div class="cell small-12 medium-12 large-7 div-feedinner">
+          <p>Our Principles</p>
+          <h2 >Lorem ipsum dolor sit
+            amet consectetur adipiscing elit, sed do.</h2>
+          <label>Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.</label>
+        </div>
+        <div class="cell  small-12 medium-12 large-5 text-right">
+  
+          <div style="position: relative;">
+            <img src="https://picsum.photos/506/304">
+            <p class="mirror">Mirror & Be Mirror</p>
+          </div>
+        </div>
+  
       </div>
     </div>
   </div>
-</div>
-
-
-<div class="grid-x widget  widget-footer">
-  <div class="cell  medium-1 large-1 start">
-
-  </div>
-  <div class="cell small-12 medium-10 large-10 div-footer">
-    <div class="div-border">
-      <img width="60px" src="./assets/img/footer-image.JPG" alt="logo"
-        data-interchange="[./assets/img/footer-image.JPG, small], [./assets/img/footer-image.JPG, medium], [./assets/img/footer-image.JPG, large]">
-
-
-      <a class="float-right div-socialicons margin-right-1">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-      <a class="float-right div-socialicons margin-right-1">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-      </a>
-      <a class="float-right div-socialicons margin-right-1">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-      </a>
-      <a class="float-right margin-right-1 get-touch">
-        Get in Touch
-      </a>
+  <div class="grid-x medium-margin-collapse grid-container full widget widget-feed-inner"
+    style="background-color: #0E2E47;">
+    <div class="cell small-12">
+      <div class="grid-x  medium-margin-collapse">
+        <div class="cell small-12 large-4 medium-4">
+  
+          <div class="grid">
+            <div class="item">
+              <a href="#0" aria-labelledby="person1"></a>
+              <img src="https://picsum.photos/425/425">
+              <div class="item__overlay">
+                <h3 id="person1" aria-hidden="true">Where is the Joy?</h3>
+                <div class="item__body">
+                  <p class="border-top-grey"></p>
+                  <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
+                    the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
+                    new skills, and recognize our past successes.</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+          </div>
+        </div>
+        <div class="cell small-12 large-4 medium-4">
+  
+          <div class="grid">
+            <div class="item">
+              <a href="#0" aria-labelledby="person2"></a>
+              <img src="https://picsum.photos/425/425">
+              <div class="item__overlay">
+                <h3 id="person2" aria-hidden="true" >Where is the Joy?</h3>
+                <div class="item__body">
+                  <p class="border-top-grey"></p>
+                  <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
+                    the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
+                    new skills, and recognize our past successes.</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+          </div>
+        </div>
+        <div class="cell small-12 large-4 medium-4">
+  
+          <div class="grid">
+            <div class="item">
+              <a href="#0" aria-labelledby="person2"></a>
+              <img src="https://picsum.photos/425/425">
+              <div class="item__overlay">
+                <h3 id="person2" aria-hidden="true">Where is the Joy?</h3>
+                <div class="item__body">
+                  <p class="border-top-grey"></p>
+                  <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
+                    the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
+                    new skills, and recognize our past successes.</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+          </div>
+        </div>
+      </div>
+  
+  
+      <div class="grid-x  medium-margin-collapse">
+        <div class="cell small-12 large-4 medium-4">
+  
+          <div class="grid">
+            <div class="item">
+              <a href="#0" aria-labelledby="person3"></a>
+              <img src="https://picsum.photos/425/425">
+              <div class="item__overlay">
+                <h3 id="person3" aria-hidden="true" >Where is the Joy?</h3>
+                <div class="item__body">
+                  <p class="border-top-grey"></p>
+                  <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
+                    the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
+                    new skills, and recognize our past successes.</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+          </div>
+        </div>
+        <div class="cell small-12 large-4 medium-4">
+  
+          <div class="grid">
+            <div class="item">
+              <a href="#0" aria-labelledby="person3"></a>
+              <img src="https://picsum.photos/425/425">
+              <div class="item__overlay">
+                <h3 id="person3" aria-hidden="true">Where is the Joy?</h3>
+                <div class="item__body">
+                  <p class="border-top-grey"></p>
+                  <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
+                    the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
+                    new skills, and recognize our past successes.</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+          </div>
+        </div>
+        <div class="cell small-12 large-4 medium-4">
+   <div class="grid">
+            <div class="item">
+              <a href="#0" aria-labelledby="person3"></a>
+              <img src="https://picsum.photos/425/425">
+              <div class="item__overlay">
+                <h3 id="person3" aria-hidden="true">Where is the Joy?</h3>
+                <div class="item__body">
+                  <p class="border-top-grey"></p>
+                  <p>We are deeply committed to the joy of our team and our partners. We take ownership for connecting to
+                    the purpose in our work. If we feel impact is missing, we raise our hand to help in new ways, develop
+                    new skills, and recognize our past successes.</p>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+  
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-    <div class="div-border">
-
-      <div class="grid-x div-employee">
-
-        <div class="cell small-12 medium-8 large-8 ">
+  
+  </div>
+  
+  
+  
+  
+  <div class="grid-x medium-margin-collapse grid-container full widget widget-client-listen margin-0">
+    <div class="cell  medium-2 large-2 start">
+    </div>
+  
+    <div class="cell small-12 medium-10 large-10 margin-top-3">
+      <div class="grid-x  medium-margin-collapse">
+        <div class="cell small-12 medium-5 large-5 div-listen">
+          <h1 class=" margin-top-3">We Listen to Our
+            Clients</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do.
+          </p>
+  
+          <label class="margin-top-2">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+        </div>
+  
+        <div class="cell small-12 large-7 medium-7">
+          <div class="widget-text-cloud" style="padding: 0 30px;">
+              <div id="word-cloud"></div>
+  
+          </div>
+  
+          <div>
+            <div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  <div class="grid-x medium-margin-collapse grid-container full widget widget-feed margin-0 relative">
+    <div class="cell small-12 relative">
+      <div class="div-person-header">
+        <div class="div-blend">
           <div class="grid-x">
-            <div class="cell small-12 medium-4 large-4">
-              <p>What We Do</p>
-              <p>Our Approach</p>
-              <p>Areas of Expertise</p>
-              <p>Our Work</p>
+            <!-- <div class="cell  medium-1 large-1 start">
+  
+            </div> -->
+            <div class="cell small-12 medium-12 large-12">
+              <div class="grid-x">
+             
+                <div class="cell small-12 medium-10 large-10 margin-bottom-3 margin-top-6">
+                  <p style="width: 64%;
+                  margin: 0 auto;">Our unique blend of leadership, skills, and personalities <span>make up our team.</span></p>
+                </div>
+              <div class="cell  medium-3 large-3 end">
+  
             </div>
-            <div class="cell small-12 medium-4 large-4">
-              <p>Resources</p>
-              <p>Insight</p>
-              <p>Online Learning</p>
+              </div>
+  
+  
             </div>
-            <div class="cell small-12 medium-4 large-4 ">
-              <p>Who We Are</p>
-
+          </div>
+  
+        </div>
+      </div>
+  
+  
+    </div>
+  </div>
+  <div class="grid-x row-align-center margin-top-3 widget widget-person">
+    <div class="cell  medium-2 large-2  start">
+    </div>
+    <div class="cell small-12 medium-8 large-8 container">
+      <div class="grid-x  position-relative">
+        <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width margin-right15">
+          <div class="grid">
+            <div class="item">
+              <label href="#0" aria-labelledby="person1"></label>
+              <img src="https://picsum.photos/360/480" class="radius image">
+  
+              <div class="overlay radius" data-open="contact-person-modal">
+                <h3 id="person1" aria-hidden="true"> Cori Davis
+                </h3>
+                <span>Improvement Advisor</span>
+                <div class="item__body">
+  
+                  <button data-open="contact-person-modal" title="Learn more about Cori">Learn more about Cori <i
+                      class="fa fa-long-arrow-right fa-about"></i></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="cell small-12 medium-4 large-4">
-
-          <a class="float-right  margin-right-1">
-            <i class="fa fa-user  div-socialicons div-social-border" aria-hidden="true"></i> Employee Portal
-          </a>
-
+        <div class="cell small-12 medium-4 large-4   margin-bottom-1 grid-width margin-right15">
+          <img src="https://picsum.photos/360/480" class="radius">
         </div>
-
+        <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width">
+          <img src="https://picsum.photos/360/480" class="radius">
+  
+        </div>
       </div>
-
+  
+  
+      <div class="grid-x position-relative">
+        <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width margin-right15">
+          <img src="https://picsum.photos/360/480" class="radius">
+        </div>
+        <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width margin-right15">
+          <img src="https://picsum.photos/360/480" class="radius">
+        </div>
+        <div class="cell small-12 medium-4 large-4  margin-bottom-1 grid-width">
+          <img src="https://picsum.photos/360/480" class="radius">
+        </div>
+      </div>
+  
+  
+      <div class="grid-x  position-relative">
+        <div class="cell small-12 medium-4 large-4   margin-bottom-1 grid-width margin-right15">
+          <img src="https://picsum.photos/360/480" class="radius">
+        </div>
+        <div class="cell small-12 medium-4 large-4   margin-bottom-1 grid-width margin-right15">
+          <img src="https://picsum.photos/360/480" class="radius">
+        </div>
+        <div class="cell small-12 medium-4 large-4 4 margin-bottom-1 grid-width">
+  
+        </div>
+      </div>
+  
     </div>
-
-    <div class="div-border">
-      <div class="div-privacy">
-        <a>Privacy Policy | Cookie Policy | Site Map <span>© 2020 Shift Results. All Rights Reserved.</span></a>
-        <a class="float-right margin-right-1">
-          <p>Developed & Designed by Bonsai Media Group</p>
-      </div>
-
-      </a>
+  
+    <div class="cell medium-2 large-2 end">
+  
     </div>
   </div>
-  <div class="cell small-1 end">
-
+  
+  
+  
+  <div class="grid-x medium-margin-collapse grid-container full widget widget-join-team margin-0">
+    <div class="cell small-12">
+      <div class="div-person-header">
+        <div class="div-blend">
+          <div class="grid-x">
+            <div class="cell  medium-2 large-2 start">
+  
+            </div>
+            <div class="cell small-12 medium-10 large-10">
+              <div class="grid-x">
+                <div class="cell small-12 medium-6 large-6 margin-bottom-3 div-join-team">
+                  <p>Join the Teams</p>
+                  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h1>
+                </div>
+  
+                <div class="cell small-12 medium-6 large-6 margin-bottom-3 div-join-inner">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+  
+                  <a href="#" class="button radius btn-opportuniities" title="View Current Opportuniities">View Current Opportuniities<i
+                      class="fa fa-arrow-right"></i></a>
+  
+                </div>
+  
+              </div>
+  
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  
   </div>
-</div>
+  
+  <div class="widget widget-learn-more grid-x">
+    <div class="cell small-12">
+      <div class="grid-x">
+        <div class="cell small-12 medium-11 large-11 large-centered medium-centered small-centered ">
+          <div class="div-chatting">
+            <img class="margin-bottom-1" src="./assets/img/chatting-icon.JPG" alt="logo"
+              data-interchange="[./assets/img/chatting-icon.JPG, small], [./assets/img/chatting-icon.JPG, medium], [./assets/img/chatting-icon.JPG, large]">
+            <p class="margin-bottom-1">We’re ready to learn more,<span> are you?</span></p>
+            <div class="div-chatting">
+              <a href="#" class="button radius btn-getintouch" title="et in touch">Get in touch<i class="fa fa-arrow-right"></i></a>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="grid-x widget  widget-footer">
+    <div class="cell  medium-1 large-1 start">
+  
+    </div>
+    <div class="cell small-12 medium-10 large-10 div-footer">
+      <div class="div-border">
+        <img width="60px" src="./assets/img/footer-image.JPG" alt="logo"
+          data-interchange="[./assets/img/footer-image.JPG, small], [./assets/img/footer-image.JPG, medium], [./assets/img/footer-image.JPG, large]">
+  
+  
+        <a class="float-right div-socialicons margin-right-1">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="float-right div-socialicons margin-right-1">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a class="float-right div-socialicons margin-right-1">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="float-right margin-right-1 get-touch">
+          Get in Touch
+        </a>
+      </div>
+  
+  
+  
+      <div class="div-border">
+  
+        <div class="grid-x div-employee">
+  
+          <div class="cell small-12 medium-8 large-8 ">
+            <div class="grid-x">
+              <div class="cell small-12 medium-3 large-3">
+                <p> <a>What We Do</a></p>
+                <p> <a>Our Approach</a></p>
+                <p><a>Areas of Expertise</a></p>
+                <p><a>Our Work</a></p>
+              </div>
+              <div class="cell small-12 medium-3 large-3">
+                <p><a>Resources</a></p>
+                <p><a>Insight</a></p>
+                <p><a>Online Learning</a></p>
+              </div>
+              <div class="cell small-12 medium-3 large-3">
+                <p><a>Who We Are</a></p>
+  
+              </div>
+              <div class="cell small-12 medium-3 large-3s">
+               
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="cell small-12 medium-4 large-4">
+  
+            <a class="float-right mobile-floating margin-right-1">
+              <i class="fa fa-user  div-socialicons div-social-border" aria-hidden="true"></i> Employee Portal
+            </a>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      
+        <div class="div-privacy">
+          <a>Privacy Policy | Cookie Policy | Site Map <span>© 2020 Shift Results. All Rights Reserved.</span></a>
+          <a class="float-right mobile-floating margin-right-1">
+            <p>Developed & Designed by Bonsai Media Group</p>
+        </div>
+  
+       
+     
+    </div>
+    <div class="cell small-1 end">
+  
+    </div>
+  </div>
 
-<script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>
