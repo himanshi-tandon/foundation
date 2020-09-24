@@ -508,12 +508,18 @@ $font-family-overpass: "Overpass";
     }
     .div-blend span {
         @extend %extension-font-size36;
+        @media screen and (max-width: 39.9375em) {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
     .div-blend p {
         @extend %extension-font-size36;
         color: #fff;
         @media screen and (max-width: 39.9375em) {
             padding-left: 20px;
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 }
